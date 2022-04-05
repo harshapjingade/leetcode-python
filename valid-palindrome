@@ -1,0 +1,8 @@
+import re
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        newstring=re.sub("[^a-z0-9]","",s.lower())
+        if newstring == newstring[::-1]:
+            return True
+        else:
+            return False
